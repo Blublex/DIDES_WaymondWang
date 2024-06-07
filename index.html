@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Images with Matter.js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="landing-page">
+            <img src="./image/waymond_fight.png" alt="Landing Image" class="landing-image">
+            <img src="./image/waymond_fight_titel.png" alt="Second Image" class="landing-image second-image">
+            <img src="./image/guggelyEye.png" alt="guggelyEye" class="landing-image guggelyEye-image">
+            <div class="landing-title">Waymond</div>
+            <div class="landing-subtitle">“The less <br> sense it makes <br> the better.”</div> <!-- Neuer Untertitel -->
+        </div>
+        <div class="main-content hidden">
+            <div class="slides">
+                <div class="line">Everything</div>
+                <div class="line highlight">is going to be</div>
+                <div class="line" style="text-align: right; margin-right: 20%;">Okey!</div>
+                
+                <img src="./image/guggelyEye.png" alt="guggelyEye" class="bild-klasse-1">
+                <img src="./image/guggelyEye.png" alt="guggelyEye" class="bild-klasse-2">
+                <img src="./image/guggelyEye.png" alt="guggelyEye" class="bild-klasse-3">
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="start-page hidden">
+            <img src="./image/evelyn_angry.gif" alt="evelyn_angry" class="start-image-1">
+            <img src="./image/evelyn_angry.gif" alt="evelyn_angry" class="start-image-2">
+            <img src="./image/evelyn_angry.gif" alt="evelyn_angry" class="start-image-3">
+            <img src="./image/evelyn_angry.gif" alt="evelyn_angry" class="start-image-4">
+           <!-- <img src="./image/waymond_shoked.png" alt="evelyn_angry" class="start-image-5"> -->
+            <div class="start-text">I told you to take down all of the google eyes!</div>
+        </div>
+        <div class="center-page hidden">
+            <img src="./image/background_waymond_1.png" alt="evelyn_angry" class="center-image-1">
+            <img src="./image/text1.png" alt="evelyn_angry" class="center-image-2">
+            <img src="./image/Bildschirmaufnahme 2024-06-03 um 18.03.51-2.gif" alt="evelyn_angry" class="center-image-3">
+            <img src="./image/Bildschirmaufnahme 2024-06-03 um 18.30.41.gif" alt="evelyn_angry" class="center-image-4">
+            <img src="./image/umarmung_1.png" alt="evelyn_angry" class="center-image-5">
+            <div class="center-text"><em>“YOU THINK I’M WEAK, <br> <span class="dont-you">DON’T YOU?”</span></em></div>
+            
+        </div>
+        <div class="last-page hidden">
+            <img src="./image/background_waymound_2.png" alt="evelyn_angry" class="last-image-1">
+            <img src="./image/text3.png" alt="evelyn_angry" class="last-image-2">
+            <img src="./image/tumblr_2a5f6b585e5f4385907d6dfdbb32fd9f_e98043cf_400.gif" alt="evelyn_angry" class="last-image-3">
+            <img src="./image/tumblr_3a35f3d7c7ac33972628c66c98fcba1d_9bd34bb3_540.gif" alt="evelyn_angry" class="last-image-4">
+            <img src="./image/tumblr_6a51adff67aaaac14748eb8ed60c30b2_c4db436a_540.gif" alt="evelyn_angry" class="last-image-5">
+        </div>
+        <div class="ending-page hidden">
+            <div class="ending-content">
+            <img src="./image/background_waymound_3.png" alt="evelyn_angry" class="ending-image-1">
+            <img src="./image/text4.png" alt="evelyn_angry" class="ending-image-2">
+            <img src="./image/Bildschirmaufnahme 2024-06-03 um 20.32.37.gif" alt="evelyn_angry" class="ending-image-3">
+            <img src="./image/guggelyEye.png" alt="evelyn_angry" class="ending-image-4">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waymond | VERTICAL IMAGE CARDS EXPANDING ON MOUSEMOVE</title>
+    <link rel="stylesheet" href="waymond.css" />
+    <style>
+        /* Hier kommt dein CSS-Styling */
+    </style>
+</head>
+<body>
+
+    <div class="angled-title-container">
+        <h1 class="angled-title">"No worries!"</h1>
+        <h2>“can we just <br> stop fighting?!”</h2>
+        <p>“When I choose to see the good side of <br> things, I’m not being naive. It’s strategic <br> and necessary. 
+            I know you see yourself <br> as a fighter. I see myself as one too.<br> This is how I fight”</p>
+        <p id="text">
+            When <span class="highlight">I choose</span> <br> to see the good side of things, <br> 
+            <span class="highlight">I'm not</span> being <span class="highlight">naive</span>. It's <br> <span class="bold">strategic</span> and <span class="bold">necessary</span>.
+        </p>
+    </div>
+
+    <!-- Grafik weiss-Rechteck -->
+    <div class="angled-rectangle"></div>
+
+    <!-- Animation Bilder -->
+    <div class="container">
+        <div class="indicator"></div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./image2/fight1.gif" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./image2/fight8.webp" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./image2/fight2.gif" alt="" />
+            </div>
+        </div>
+        <!-- Linke Galerie -->
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./image2/fight3.gif" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./image2/fight5.webp" alt="" />
+            </div>
+            <div class="gallery-item">
+                <img src="./image2/fight7.gif" alt="" />
+            </div>
+        </div>
+    </div>
+
+     <!-- Bild Waymond im Stuhl -->
+     <div class="center-image-container">
+        <img src="./image2/waymond_universum.png" alt="waymond Universum Image" class="center-image" />
+    </div>
+
+    <div class="angled-image-container">
+        <img src="./image2/waymond_fight.png" alt="waymond fight" class="angled-image" />
+    </div>
+
+    <!-- Erstes neues Bild -->
+    <div class="guggelyEye-image-container">
+        <img src="./image2/guggely_eyes.png" alt="guggelyEye_1" class="guggelyEye-image" />
+        <img src="./image2/guggely_eyes.png" alt="guggelyEye_2" class="guggelyEye-image second-guggelyEye-image" />
+    </div>
+
+
+    <script src="./waymond.js"></script>
+</body>
+</html>

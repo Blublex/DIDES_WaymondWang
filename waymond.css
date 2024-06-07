@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Custom Properties */
+    --background: #001B44;
+    --green: #142E29;
+    --font-size1: 3em;
+    --font-size2: 0.5em;
+    --font-size3: 1.3em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", sans-serif;
+    width: 200vw;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background: #142E29;
+}
+
+/* Texte */
+
+.angled-title-container {
+    position: absolute;
+    z-index: 1000;
+    top: 35%;
+    left: 150%;
+    transform: translateX(-50%)
+    rotate (-18deg);
+    pointer-events: none
+    
+}
+
+.angled-title-container h1 {
+    font-size: 10em;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-shadow: -12px 12px 2px #ADAA98;
+    color: #fff; 
+    margin: 0; 
+    padding: 0; 
+    position: absolute;
+    transform-origin: top left;
+    top: -10vh;
+    left: 5vw;
+    transform: rotate(18deg);
+    transform-origin: top left;
+}
+
+#text {
+    font-size: 3em; /* Standard Schriftgröße */
+    position: absolute;
+    top: -9vh;
+    left: 28vw;
+    transform: rotate(18deg);
+    transform-origin: top left;
+    color: #fff;
+    width: 80vw; /* Breite auf 80% des übergeordneten Elements festlegen */
+    line-height: 1.1; 
+}
+
+.highlight {
+    font-size: 1.75em; 
+    font-weight: 900; 
+}
+
+.bold {
+    font-weight: 900; 
+    font-size: 1em;
+}
+
+.angled-title-container h2 {
+    font-size: 2.75em;
+    position: absolute;
+    top: 21vh;
+    left: -35vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--green);
+    transform: rotate(18deg); 
+    transform-origin: top left; 
+}
+
+.angled-title-container p {
+    position: absolute;
+    top: 34vh;
+    left: -37.5vw;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: medium;
+    color: var(--green);
+    transform: rotate(18deg);
+    transform-origin: top left;
+}
+
+/*-----------------------*/
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1400px;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+    display: flex;
+    justify-content: space-between; /* Änderung: Galerien links und rechts platziert */
+}
+
+.indicator {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    top: 12px; 
+    left: 6px; 
+    width: 42px; 
+    height: 42px; 
+    background: #000;
+    border-radius: 100%;
+}
+
+/* Zweites Element */
+.second-indicator {
+    position: absolute;
+    top: -65px; /* Ändere den Abstand zum ersten Indikator */
+    left: 70px; /* Ändere den Abstand zum ersten Indikator */
+    width: 55px;
+    height: 55px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.second-indicator::before {
+    content: "";
+    position: absolute;
+    top: 12px; 
+    left: 6px; 
+    width: 42px; 
+    height: 42px; 
+    background: #000;
+    border-radius: 100%;
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 70px); /* Abstand zwischen den galleryBox */
+    overflow: hidden;
+}
+
+.gallery-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 20px; 
+    height: 470px; /* Bildhöhe */
+    margin: 0 15px;
+    background: #000;
+    overflow: hidden;
+    transition: flex 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+}
+
+/* Platzierung der Bilder */
+
+.center-image-container {
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.center-image {
+    width: 600px;
+    height: auto;
+    pointer-events: none;
+}
+
+.angled-image-container {
+    position:absolute;
+    z-index: 1000;
+    top: 1vw;
+    left: 120%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    transform: rotate(18deg);
+}
+
+.angled-image {
+    width: 31vw;
+    height: auto;
+    pointer-events: none;
+}
+
+.guggelyEye-image-container {
+    position: absolute;
+    z-index: 1000;
+    top: 9vw;
+    left: 215%;
+
+}
+
+.guggelyEye-image {
+    width: 30vw;
+    height: auto;
+    pointer-events: none;
+   
+}
+
+.second-guggelyEye-image {
+    position: absolute;
+    top: 9vw;
+    left: -390%;
+    width: 15vw;
+    height: auto;
+    transform: rotate(150deg);
+}
+
+/* Platzierung der Grafik */
+
+.angled-rectangle {
+    position: absolute;
+    top: -8vw;
+    left: 10;
+    width: 225vw; 
+    height: 115vh; 
+    background-color: #fff;
+    transform-origin: top left;
+    transform: rotate(18deg);
+    overflow-x: scroll; 
+    overflow-y: hidden;
+    /* clip-path: polygon(0 0, 100% 0, 80% calc(100% - 18vw), 0 100%); */
+}
